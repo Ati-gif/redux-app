@@ -6,7 +6,9 @@ import Footer from "./Footer";
 const App = () => (
   <div className="App">
     <TodoForm />
+    <hr />
     <TodoList />
+    <hr />
     <Footer />
   </div>
 );
