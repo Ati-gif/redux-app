@@ -29,7 +29,13 @@
 //   }
 // };
 
-const todos = (state = [], action) => {
+const todos = (
+  state = [
+    { id: -2, name: "default 1", complete: true },
+    { id: -1, name: "default 2", complete: false },
+  ],
+  action
+) => {
   switch (action.type) {
     case "ADD_TODO":
       return [...state, action.todo];
